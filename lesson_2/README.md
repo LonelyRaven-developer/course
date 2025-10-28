@@ -3,7 +3,7 @@
 **Developed on:** 12 July 2025  
 **Lesson conducted on:** 21 October 2025
 
-This repository contains materials for a HTML lesson including homework and presentation.
+Portfolio website. I added everything I thought was necessary. I didn't really understand about the sections, so I made several pages and moved between them, accessing the form only through the main page.
 
 ## Files
 
