@@ -4,50 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width = device-width, initial-scale=1.0, maximum-scale=2.0, orientation = portrait">
     <title>Form</title>
+    <link rel="icon" href="Logo.jfif" type="image/x-icon">
+
 </head>
 <body>
     <header>
         <nav class="menu"></nav>
+        <ul>
         <li><a href="index.html">Main</a></li>
+        </ul>
 
         <h1>Offer cooperation</h1>
     </header>
     <main>
-        <fieldset>
-            <form name="test" method="post" action="test.txt">
-                <legend>
-                    Enter your last name*:
-                    <br>
-                    <input type="text" name="f" size="30">
-                    <br>
-                    Enter a name*:
-                    <br>
-                    <input type="text" name="i" size="30">
-                    <br>
-                    Enter your middle name
-                    <br>
-                    <input type="text" name="o" size="30">
-                </legend>
-                
-                <legend>
-                    Enter Email*: <br>
-                    <input type="email" name="email">
-                    <br>
-                    Enter Number telephone*: <br>
-                    <input type="tel" name="telephone">
-                    <br>
-                </legend>
-
-                <legend>
-                    Enter a message: <br>
-                    <input type="text" name="message">
-                    <br>
-                </legend>
-                
+        <form name="test" method="post" action="test.txt">
+            <fieldset>
+                <legend>Personal information</legend>
+                <label for="lastname">Enter your last name*:</label>
                 <br>
-                <button type="submit">Submit</button>
-            </form>
-        </fieldset>
+                <input type="text" id="lastname" name="f" size="30"
+                placeholder="Ivanov"
+                required>
+                <br>
+                <label for="firstname">Enter a name*:</label>
+                <br>
+                <input type="text" id="firstname" name="i" size="30"
+                placeholder="Ivan"
+                required>
+                <br>
+                <label for="middlename">Enter your middle name*:</label>
+                <br>
+                <input type="text" id="middlename" name="o" size="30"
+                placeholder="Ivanovich">
+            </fieldset>
+            <fieldset>
+            <legend>Contact information</legend>
+            <label for="email">Enter Email*:</label>
+            <br>
+            <input type="email" id="email" name="email"
+            placeholder="IvanovIvan@yandex.ru"
+            required>
+            <br>
+            <label for="telephone">Enter Number telephone*:</label>
+ <br>
+            <input type="tel" id="telephone" name="telephone" 
+            pattern="[\+]\d{1,3}\s?\(\d{1,5}\)\s?\d{1,3}[\s-]?\d{2,3}[\s-]?\d{2,3}"
+            placeholder="+7 (999) 123-45-67"
+            required>
+            <br>      
+            </fieldset>
+            <fieldset>
+                <legend>Message</legend>  
+                Enter a message: <br>
+                <input type="text" name="message"
+                placeholder="Message">
+                <br>
+            </fieldset>         
+            <br>
+            <button type="submit">Submit</button>
+        </form>
     </main>
     <footer>
         <p>* Required fields</p>
