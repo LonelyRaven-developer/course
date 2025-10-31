@@ -1,4 +1,26 @@
 h1
 {
-    color: red;
+    color: #FFB800
+}
+header
+{
+    background-color: black;
+    
+    display: flex;
+    flex-direction: row-reverse;
+
+    height: 100%;
+}
+a
+{
+    text-decoration: none;
+    color: whitesmoke;
+}
+#HOME
+{
+    background-color: black;
+}
+#About_me
+{
+    background-color: #252525;
 }
