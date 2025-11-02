@@ -13,27 +13,86 @@ header
     
     display: flex;
     flex-direction: row-reverse;
-
+    
     height: 100%;
+}
+.menu
+{
+    display: flex;
+    gap: 30px;
 }
 a
 {
     text-decoration: none;
     color: white;
 }
-main/* #HOME */
+main
 {
+    text-align: center;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.photo_container
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
 #photo
 {
     border-radius: 50%;
-    display: flex;
-    justify-content:center;
-    /* align-items: center; */
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+#photo_about
+{
+    border-radius: 5%;
+    width: 300px;
+    margin: 25px;
+    object-fit: cover;
+}
+.ABOUT
+{
+    display: grid;
+    grid-template-columns: [photo] 40% [text] 60%;
+}
+.Skills
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 200px;
+    grid-template-areas: 
+    "GameDev Python"
+    "Cplus CSharp"
+    "Arduino Arduino";
+}
+.GameDev {grid-area: GameDev;}
+.Python {grid-area: Python;}
+.Cplus {grid-area: Cplus;}
+.CSharp {grid-area: CSharp;}
+.Arduino 
+{
+    grid-area: Arduino;
+    text-align: center;
+}
+.Work
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 200px;
+    grid-template-areas: 
+    "GameDev Python"
+    "Cplus CSharp"
+    "Arduino Arduino";   
+}
+ul li::marker
+{
+    color: #FFB800;
 }
 p
 {
