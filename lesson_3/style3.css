@@ -1,25 +1,25 @@
-html
+.page
 {
     background-color: transparent;
 }
-.decor
+.link--decorated
 {
     text-decoration-line: none;
     border-bottom: 3px #FFB800 solid;
     text-decoration-color: #FFB800 ;
     color: white;
 }
-body
+.page__body
 {
     background-color: black;
     background-size: 100% 100%;
     color:white;
 }
-h1
+.text--accent
 {
     color: #FFB800
 }
-h4
+.text--large
 {
     font-size: 25px;
 }
@@ -34,7 +34,7 @@ header
     height: 100%;
 }
 
-.menu
+.header__menu
 {
     display: flex;
     gap: 30px;
@@ -42,7 +42,7 @@ header
     text-align: right;
     justify-content: end;
 }
-.none_decor
+.link
 {
     text-decoration: none;
     color: white;
@@ -57,20 +57,20 @@ main
     height:800px;
 
 }
-.photo_container
+.hero
 {
     display: flex;
     justify-content:center;
     align-items: center;
 }
-.photo
+.hero__photo
 {
     border-radius: 50%;
     width: 300px;
     height: 300px;
     object-fit: cover;
 }
-.PHOTO_ABOUT
+.about__photo
 {
     border-radius: 10%;
     width: 300px;
@@ -79,37 +79,37 @@ main
     margin-right: 5vw;
     margin-top: 5vw;
 }
-.ABOUT
+.about
 {
     /* background-size: 100% 100%; */
     background-color: #252525;
     width: 100%;
     display: grid;
     height:634px;
-    grid-template-columns: [photo] 40% [text] 60%;
+    grid-template-columns: [hero__photo] 40% [footer__link] 60%;
 }
-.Skills
+.about__skills
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 20px 200px;
     grid-template-areas: 
-    "GameDev Python"
-    "Cplus CSharp"
-    "Arduino Arduino";
+    "about__skill--gamedev about__skill--python"
+    "about__skill--cplus about__skill--csharp"
+    "about__skill--arduino about__skill--arduino";
 }
 .PHOTOABOUT{grid-area: PHOTOABOUT;}
-.GameDev {grid-area: GameDev;}
-.Python {grid-area: Python;}
-.Cplus {grid-area: Cplus;}
-.CSharp {grid-area: CSharp;}
-.Arduino 
+.about__skill--gamedev {grid-area: about__skill--gamedev;}
+.about__skill--python {grid-area: about__skill--python;}
+.about__skill--cplus {grid-area: about__skill--cplus;}
+.about__skill--csharp {grid-area: about__skill--csharp;}
+.about__skill--arduino 
 {
-    grid-area: Arduino;
+    grid-area: about__skill--arduino;
     text-align: center;
 }
-.WORK
+.work
 {
     background-color: black;
     height: 700px;
@@ -120,78 +120,78 @@ main
     margin: 0 auto;
     max-width: 1440px;
     grid-template-areas: 
-    "WorkGap1 Work Work Work Work WorkGap2"
-    "WorkGap1 Work1 Work2 Work3 Work4 WorkGap2"
-    "WorkGap1 Work5 Work6 Work7 Work8 WorkGap2";   
+    "work__gap work__title work__title work__title work__title WorkGap2"
+    "work__gap work__item--1 work__item--2 work__item--3 work__item--4 WorkGap2"
+    "work__gap work__item--5 work__item--6 work__item--7 work__item--8 WorkGap2";   
 }
 
 
-.Work
+.work__title
 {
     text-align: center;
     height: 150px;
-    grid-area: Work;
+    grid-area: work__title;
     line-height: 150px;
 }
-.Work1 {
-    grid-area: Work1;
+.work__item--1 {
+    grid-area: work__item--1;
     width: 200px;
     height: 150px;
     border-radius: 10%;
     background-color:gainsboro;
 }
-.Work2 
+.work__item--2 
 {
-    grid-area: Work2;
+    grid-area: work__item--2;
     width: 200px;
     height: 150px;
     border-radius: 10%;
     background-color:gainsboro;
 }
-.Work3 
+.work__item--3 
 {
-    grid-area: Work3;
+    grid-area: work__item--3;
     width: 200px;
     height: 150px;
     border-radius: 10%;
     background-color:gainsboro;
 }
-.Work4 
+.work__item--4 
 {
-    grid-area: Work4;
+    grid-area: work__item--4;
     width: 200px;
     height: 150px;
     border-radius: 10%;
     background-color:gainsboro;
 }
-.Work5 
+.work__item--5 
 {
-    grid-area: Work5;
+    grid-area: work__item--5;
     width: 200px;
     height: 150px;
     border-radius: 10%;
     background-color:gainsboro;
 }
-.Work6 
+.work__item--6 
 {
-    grid-area: Work6;
+    grid-area: work__item--6;
     width: 200px;
     height: 150px;
     border-radius: 10%;
     background-color:gainsboro;
 }
-.Work7 
+.work__item--7 
 {
-    grid-area: Work7;
+    grid-area: work__item--7;
     width: 200px;
     height: 150px;
     border-radius: 10%;
     background-color:gainsboro;
 }
-.Work8 
+.work__item--8 
 {
     color:black;
-    grid-area: Work8;
+    grid-area: work__item--8;
     width: 200px;
     height: 150px;
     border-radius: 10%;
@@ -200,23 +200,23 @@ main
     line-height: 150px;
     font-size: 50px;
 }
-.WorkGap1
+.work__gap
 {
     width: 200px;
     grid-area: WorkGap;
 }
-ul li::marker
+.list__marker
 {
     color: #FFB800;
     text-decoration-line: none;
 }
-p
+.paragraph
 {
     margin-block: 0px;
     margin-block-end: 0px;
 
 }
-.BLOG
+.blog
 {
     background-color: #252525;
     height:700px;
@@ -228,38 +228,38 @@ p
     padding: 0 auto;
     margin: 0 auto;
     grid-template-areas: 
-    "Bloggap1 Blog Blog Blog Bloggap2"
-    "Bloggap1 Blog1 Blog2 Blog3 Bloggap2";   
+    "blog__gap blog__title blog__title blog__title blog__gap"
+    "blog__gap blog__item--1 blog__item--2 Blog3 blog__gap";   
 }
-.Blog
+.blog__title
 {
     text-align: center;
     height: 50px;
-    grid-area: Blog;
+    grid-area: blog__title;
     line-height: 50px;
     
 }
-.Bloggap1
+.blog__gap
 {
     width: 200px;
     grid-area: Bloggap;
 }
-.Bloggap2
+.blog__gap
 {
     width: 200px;
     grid-area: Bloggap;
 }
-.Blog1 
+.blog__item--1 
 {
-    grid-area: Blog1;
+    grid-area: blog__item--1;
     width: 280px;
     height: 400px;
     border-radius: 10%;
     background-color:black;
     
 }
-.Blog2 {
-    grid-area: Blog2;
+.blog__item--2 {
+    grid-area: blog__item--2;
     width: 280px;
     height: 400px;
     border-radius: 10%;
@@ -272,7 +272,7 @@ p
     border-radius: 10%;
     background-color:black;
 }
-.CONTACT
+.contact
 {
     height: 700px;
     /* width: 1440px; */
@@ -284,57 +284,57 @@ p
     padding: 0 auto;
     margin: 0 auto;
     grid-template-areas: 
-    "Contact Contact Contact Contact"
-    "Contactgap1 ContactText ContactForm Contactgap2";   
+    "contact__title contact__title contact__title contact__title"
+    "contact__gap contact__info contact__form contact__gap";   
 }
-.Contact
+.contact__title
 {
     text-align: center;
     /* color: white; */
     height: 50px;
-    grid-area: Contact;
+    grid-area: contact__title;
     line-height: 50px;
 }
-.ContactText 
+.contact__info 
 {
-    grid-area: ContactText;
+    grid-area: contact__info;
     width: 500px;
     height: 400px;
     border-radius: 10%;
     background-color:black;    
 }
-.contact_title
+.contact__section-title
 {
 color: #FFB800;
 font-size: 50px;
 margin:5px;
 
 }
-.ContactForm
+.contact__form
 {
-    grid-area: ContactForm;
+    grid-area: contact__form;
     width: 500px;
     height: 400px;
     border-radius: 10%;
     background-color:black;
 }
-.Contactgap1
+.contact__gap
 {
     width: 200px;
     grid-area: Contactgap;
 }
-.Contactgap2
+.contact__gap
 {
     width: 200px;
     grid-area: Contactgap;
 }
-button
+.form__button
 {
     background-color: #FFB800;
     width: 100px;
     height: 50px;
 }
-input
+.form__input
 {
     background-color: gray;
 }
@@ -342,7 +342,7 @@ input
 {
     color: #252525;
 }
-.menu_f
+.footer__menu
 {
     display: flex;
     padding-top: 30px;
@@ -351,12 +351,12 @@ input
     text-align: center;
     justify-content: center;
 }
-.text
+.footer__link
 {
     text-decoration: none;
     color: black;
 }
-.footer_text
+.footer__text
 {
     font-size: 30px;
     margin: 5px;
@@ -372,7 +372,7 @@ footer
 }
 @media(max-width: 768px) 
 {
-    .menu
+    .header__menu
     {
         width: 90vw;
     }
@@ -380,11 +380,11 @@ footer
     {
         width: 90vw;
     }
-    body
+    page__body
     {
         width: 100%;
     }
-    .PHOTO_ABOUT
+    .about__photo
     {
         width: 50vw;
         object-fit: cover;
@@ -392,7 +392,7 @@ footer
         margin-right: 5vw;
         margin-top: 5vw;
     }
-    .ABOUT
+    .about
     {
         display: grid;
 
@@ -401,7 +401,7 @@ footer
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
-    .Skills
+    .about__skills
     {
         justify-content: center;
         grid-template-columns: 1fr;
@@ -409,38 +409,38 @@ footer
         gap: 20px;
         grid-template-areas: 
         "PHOTOABOUT"
-        "GameDev" 
-        "Python"
-        "Cplus" 
-        "CSharp"
-        "Arduino";
+        "about__skill--gamedev" 
+        "about__skill--python"
+        "about__skill--cplus" 
+        "about__skill--csharp"
+        "about__skill--arduino";
         height: auto;
     }
-    .Arduino
+    .about__skill--arduino
     {
         text-align: left;   
     }
-    .WORK
+    .work
     {
         justify-content: center;
         grid-template-columns: 1fr;
         grid-template-rows: auto; /* Автоматические строки */
         grid-template-areas: 
-            "Work"
-            "Work1"
-            "Work2" 
-            "Work3"
-            "Work4"
-            "Work5"
-            "Work6"
-            "Work7"
-            "Work8";
+            "work__title"
+            "work__item--1"
+            "work__item--2" 
+            "work__item--3"
+            "work__item--4"
+            "work__item--5"
+            "work__item--6"
+            "work__item--7"
+            "work__item--8";
         height: auto; /* Автоматическая высота на мобильных */
         gap: 20px;
         padding-left: 50%; /* Добавляем отступы */
         padding-right: 50%;
     }
-    .BLOG
+    .blog
     {
         justify-items: center;
         display: grid;
@@ -449,16 +449,16 @@ footer
         gap: 20px;
         padding: 20px;
         grid-template-areas: 
-        "Blog"
-        "Blog1"
-        "Blog2" 
+        "blog__title"
+        "blog__item--1"
+        "blog__item--2" 
         "Blog3";  
         height: auto; 
         width: 100%;
         max-width: 100%;
         margin: 0 auto;
     }
-    .CONTACT
+    .contact
     {
         height: auto;
         width: 100%;
@@ -470,18 +470,18 @@ footer
         padding: 0 auto;
         margin: 0 auto;
         grid-template-areas: 
-        "Contact"
-        "ContactText"
-        "ContactForm";   
+        "contact__title"
+        "contact__info"
+        "contact__form";   
     }
-    .ContactText 
+    .contact__info 
     {
-        grid-area: ContactText;
+        grid-area: contact__info;
         width: 100%;
         height: auto;
         background-color:black;    
     }
-    .menu_f
+    .footer__menu
     {
         display: flex;
         padding-top: 30px;
@@ -493,7 +493,7 @@ footer
 }
 @media(min-width: 769px) and (max-width: 1024px) 
 {
-    .menu
+    .header__menu
     {
         width: 90vw;
     }
@@ -501,11 +501,11 @@ footer
     {
         width: 90vw;
     }
-    body
+    page__body
     {
         width: 100%;
     }
-    .PHOTO_ABOUT
+    .about__photo
     {
         width: 50vw;
         object-fit: cover;
@@ -513,7 +513,7 @@ footer
         margin-right: 5vw;
         margin-top: 5vw;
     }
-    .ABOUT
+    .about
     {
         display: grid;
 
@@ -522,7 +522,7 @@ footer
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
-    .Skills
+    .about__skills
     {
         justify-content: center;
         grid-template-columns: 1fr;
@@ -530,34 +530,34 @@ footer
         gap: 20px;
         grid-template-areas: 
         "PHOTOABOUT"
-        "GameDev" 
-        "Python"
-        "Cplus" 
-        "CSharp"
-        "Arduino";
+        "about__skill--gamedev" 
+        "about__skill--python"
+        "about__skill--cplus" 
+        "about__skill--csharp"
+        "about__skill--arduino";
         height: auto;
     }
-    .Arduino
+    .about__skill--arduino
     {
         text-align: left;   
     }
-    .WORK
+    .work
     {
         justify-content: center;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto; /* Автоматические строки */
         grid-template-areas: 
-            "Work Work"
-            "Work1 Work2" 
-            "Work3 Work4"
-            "Work5 Work6"
-            "Work7 Work8";
+            "work__title work__title"
+            "work__item--1 work__item--2" 
+            "work__item--3 work__item--4"
+            "work__item--5 work__item--6"
+            "work__item--7 work__item--8";
         height: auto; /* Автоматическая высота на мобильных */
         gap: 20px;
         padding-left: 50%; /* Добавляем отступы */
         padding-right: 50%;
     }
-    .BLOG
+    .blog
     {
         justify-items: center;
         display: grid;
@@ -566,15 +566,15 @@ footer
         gap: 20px;
         padding: 20px;
         grid-template-areas: 
-        "Blog Blog"
-        "Blog1 Blog2"
+        "blog__title blog__title"
+        "blog__item--1 blog__item--2"
         "Blog3 Blog3";  
         height: auto; 
         width: 100%;
         max-width: 100%;
         margin: 0 0;
     }
-    .CONTACT
+    .contact
     {
         height: auto;
         width: 100%;
@@ -586,18 +586,18 @@ footer
         padding: 0 auto;
         margin: 0 auto;
         grid-template-areas: 
-        "Contact"
-        "ContactText"
-        "ContactForm";   
+        "contact__title"
+        "contact__info"
+        "contact__form";   
     }
-    .ContactText 
+    .contact__info 
     {
-        grid-area: ContactText;
+        grid-area: contact__info;
         width: 100%;
         height: auto;
         background-color:black;    
     }
-    .menu_f
+    .footer__menu
     {
         display: flex;
         padding-top: 30px;
