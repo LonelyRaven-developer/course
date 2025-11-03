@@ -503,3 +503,119 @@ footer
         justify-content: center;
     }
 }
+@media(min-width: 769px) and (max-width: 1024px) 
+{
+    .menu
+    {
+        width: 90vw;
+    }
+    header
+    {
+        width: 90vw;
+    }
+    body
+    {
+        width: 100%;
+    }
+    #photo_about
+    {
+        width: 50vw;
+        object-fit: cover;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 5vw;
+    }
+    .ABOUT
+    {
+        display: grid;
+
+        height: auto; 
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .Skills
+    {
+        justify-content: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+        grid-template-areas: 
+        "PHOTOABOUT"
+        "GameDev" 
+        "Python"
+        "Cplus" 
+        "CSharp"
+        "Arduino";
+        height: auto;
+    }
+    .Arduino
+    {
+        text-align: left;   
+    }
+    .WORK
+    {
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto; /* Автоматические строки */
+        grid-template-areas: 
+            "Work Work"
+            "Work1 Work2" 
+            "Work3 Work4"
+            "Work5 Work6"
+            "Work7 Work8";
+        height: auto; /* Автоматическая высота на мобильных */
+        gap: 20px;
+        padding-left: 50%; /* Добавляем отступы */
+        padding-right: 50%;
+    }
+    .BLOG
+    {
+        justify-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+        padding: 20px;
+        grid-template-areas: 
+        "Blog Blog"
+        "Blog1 Blog2"
+        "Blog3 Blog3";  
+        height: auto; 
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0;
+    }
+    .CONTACT
+    {
+        height: auto;
+        width: 100%;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 50px;
+        padding: 0 auto;
+        margin: 0 auto;
+        grid-template-areas: 
+        "Contact"
+        "ContactText"
+        "ContactForm";   
+    }
+    .ContactText 
+    {
+        grid-area: ContactText;
+        width: 100%;
+        height: auto;
+        background-color:black;    
+    }
+    .menu_f
+    {
+        display: flex;
+        padding-top: 30px;
+        gap: 30px;
+        width:100%;
+        text-align: center;
+        justify-content: center;
+    }
+}
